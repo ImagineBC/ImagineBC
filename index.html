@@ -280,7 +280,18 @@
       font-size: 1.1rem;
       color: #eee;
     }
-    .join .join-btn {
+    /* Store Icons */
+    .store-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .store-icon {
+      width: 160px;  /* Adjust to desired size */
+      height: auto;
+    }
+    .join-btn {
       display: inline-block;
       padding: 1rem 2rem;
       background: #fff;
@@ -293,7 +304,7 @@
       cursor: pointer;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
-    .join .join-btn:hover {
+    .join-btn:hover {
       background-color: #f0f0f0;
       transform: scale(1.05);
       color: #673ab7;
@@ -406,6 +417,9 @@
       .artist-grid {
         grid-template-columns: 1fr;
       }
+      .store-icons {
+        flex-direction: column;
+      }
     }
   </style>
   <!-- Fonts & Icons -->
@@ -469,7 +483,7 @@
               has performed at historic venues like The Bitter End in NYC. Her EPs <em>Old Soul</em>
               and <em>Dear Me</em> showcase her passionate storytelling and undeniable vocal talent.
             </p>
-            <a href="https://www.judyannejackson.com/" target="_blank">Visit Her Page</a>
+            <a href="#join">Join Me in the Community</a>
           </div>
         </div>
 
@@ -478,6 +492,7 @@
           <img
             src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/648230/d672e3af01e2add6f7f77540201af450c880ea6d/original/ae7aa3b2-0bab-4988-834c-e97ae3abde25.jpeg/!!/b%3AW1sicmVzaXplIiwxMzY1XSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
             alt="Kyle Shaw"
+            style="object-position: 50% 20%;"  <!-- Adjust object-position to better frame face -->
           />
           <div class="artist-info">
             <h3>Kyle Shaw</h3>
@@ -487,7 +502,7 @@
               to the Tampa Bay scene. With a second album on the way, Kyle continues to craft
               songs that move, inspire, and leave a lasting impression.
             </p>
-            <a href="https://kyleshawmusic.com/music" target="_blank">Visit His Page</a>
+            <a href="#join">Join Me in the Community</a>
           </div>
         </div>
 
@@ -506,7 +521,7 @@
               Her EP <em>CoAnn</em> and music videos <em>Paralyzed</em> and <em>Worlds Apart</em>
               highlight her evolving artistry as she crafts her first full-length album.
             </p>
-            <a href="https://www.coannmusic.com/" target="_blank">Visit Her Page</a>
+            <a href="#join">Join Me in the Community</a>
           </div>
         </div>
 
@@ -524,7 +539,7 @@
               he’s transporting listeners to another time. His latest album, <em>Cautionary Tales</em>,
               showcases his masterful songwriting and is available on all streaming platforms.
             </p>
-            <a href="https://deanjohanesen.com/" target="_blank">Visit His Page</a>
+            <a href="#join">Join Me in the Community</a>
           </div>
         </div>
 
@@ -541,7 +556,7 @@
               voice and intricate guitar work. Equally adept at reviving old-time classics
               and penning original tunes, he brings authenticity and raw emotion wherever he performs.
             </p>
-            <a href="https://coreyhallmusic.com/home" target="_blank">Visit His Page</a>
+            <a href="#join">Join Me in the Community</a>
           </div>
         </div>
       </div>
@@ -551,7 +566,15 @@
     <section class="join" id="join">
       <h2>Join the Movement</h2>
       <p>B4Famous is more than a collective—it's a movement to support independent artists before the world catches on.</p>
-      <a href="#" class="join-btn">Follow Us on ImagineBC</a>
+      <!-- Store Icons for iOS & Android -->
+      <div class="store-icons">
+        <a href="https://apps.apple.com/us/app/imaginebc/id1476426515">
+          <img class="store-icon" src="https://imaginebc.net/wp-content/uploads/2024/02/AppleStore.png" alt="Apple App Store">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.benepay.homebase&hl=en_IN">
+          <img class="store-icon" src="https://imaginebc.net/wp-content/uploads/2024/02/PlayStore.png" alt="Google Play Store">
+        </a>
+      </div>
     </section>
 
     <!-- Contact Section -->
