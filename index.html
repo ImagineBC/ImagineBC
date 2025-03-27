@@ -35,26 +35,34 @@
       z-index: 100;
     }
 
-    /* Logo */
+    /* Logo --- MODIFIED FOR LINK */
     .logo {
-      display: flex;
-      align-items: center;
+      /* This div now mainly serves as a container */
+      /* Flex alignment is handled by the anchor tag inside */
     }
-    .logo img {
+    .logo a { /* Style the anchor tag wrapping the logo elements */
+        display: flex;
+        align-items: center;
+        text-decoration: none; /* Remove default link underline */
+        color: inherit; /* Prevent link from forcing default blue color */
+    }
+    .logo a img { /* Target image inside the link */
       height: 70px;
       margin-right: 1rem;
       transition: transform 0.3s ease;
     }
-    .logo img:hover {
+    .logo a:hover img { /* Apply hover effect to image when link is hovered */
       transform: scale(1.1);
     }
-    .logo-title {
+    .logo a .logo-title { /* Target title inside the link */
       font-family: 'Montserrat', sans-serif; /* Bold, modern sans-serif */
       font-size: 2.2rem;
-      color: #9c27b0; /* Deep Purple */
+      color: #9c27b0; /* Deep Purple - Ensure this remains */
       font-weight: 700;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     }
+    /* --- END LOGO MODIFICATION --- */
+
 
     /* Navigation */
     nav ul {
@@ -389,18 +397,24 @@
       .hero h1 {
         font-size: 2.2rem;
       }
-      .logo img {
+      /* Adjust logo image height inside link */
+      .logo a img {
         height: 50px;
       }
-      .logo-title {
+       /* Adjust logo title size inside link */
+      .logo a .logo-title {
         font-size: 1.8rem;
       }
       header, nav, main, section, footer {
         padding: 0 1rem;
       }
+       header { /* Reduce header padding on smaller screens */
+         padding: 1rem 1rem;
+       }
       .about, .artists {
         padding: 2rem 1rem;
-        margin: 0 auto;
+        margin: 0 auto; /* Ensure sections are centered */
+        margin-bottom: 2rem; /* Consistent spacing */
       }
       .artist-grid {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -419,10 +433,24 @@
       }
       .store-icons {
         flex-direction: column;
+         align-items: center; /* Center icons when stacked */
       }
+       .logo a img { /* Further reduce logo size */
+           height: 40px;
+           margin-right: 0.5rem; /* Reduce space */
+       }
+       .logo a .logo-title {
+           font-size: 1.5rem; /* Further reduce title size */
+       }
+       nav ul {
+          justify-content: center; /* Center nav items on very small screens */
+          gap: 0.5rem; /* Reduce gap */
+       }
+       nav a {
+          padding: 0.4rem 0.6rem; /* Reduce nav link padding */
+       }
     }
   </style>
-  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -432,8 +460,10 @@
 
   <header>
     <div class="logo">
-      <img src="https://imaginebc.net/wp-content/uploads/2025/02/B4Famous-Logo.png" alt="B4Famous Logo">
-      <span class="logo-title">B4Famous</span>
+      <a href="https://www.b4famous.com/">
+        <img src="https://imaginebc.net/wp-content/uploads/2025/02/B4Famous-Logo.png" alt="B4Famous Logo">
+        <span class="logo-title">B4Famous</span>
+      </a>
     </div>
     <nav>
       <ul>
@@ -452,7 +482,6 @@
   </section>
 
   <main>
-    <!-- About Section -->
     <section class="about" id="about">
       <h2>About B4Famous</h2>
       <p>
@@ -464,11 +493,9 @@
       </p>
     </section>
 
-    <!-- Artists Section -->
     <section class="artists" id="artists">
       <h2>Meet Some of Our Artists</h2>
       <div class="artist-grid">
-        <!-- JudyAnne Jackson -->
         <div class="artist-card">
           <img
             src="https://images.squarespace-cdn.com/content/v1/5ffe1bc8c3f2a54f4ff61cbe/1c2a65e6-d5c7-4b4c-b5de-9ad21f5d9d53/jajax+web+banner.jpg?format=2500w"
@@ -487,13 +514,11 @@
           </div>
         </div>
 
-        <!-- Kyle Shaw -->
         <div class="artist-card">
           <img
             src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/648230/d672e3af01e2add6f7f77540201af450c880ea6d/original/ae7aa3b2-0bab-4988-834c-e97ae3abde25.jpeg/!!/b%3AW1sicmVzaXplIiwxMzY1XSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
             alt="Kyle Shaw"
-            style="object-position: 50% 20%;"  <!-- Adjust object-position to better frame face -->
-          />
+            style="object-position: 50% 20%;"  />
           <div class="artist-info">
             <h3>Kyle Shaw</h3>
             <p>
@@ -506,7 +531,6 @@
           </div>
         </div>
 
-        <!-- CoAnn -->
         <div class="artist-card">
           <img
             src="https://static.wixstatic.com/media/85f823_57242a30466a42a6956c87564622e0b8~mv2_d_3628_3628_s_4_2.jpg/v1/fill/w_3426,h_2068,al_t,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/85f823_57242a30466a42a6956c87564622e0b8~mv2_d_3628_3628_s_4_2.jpg"
@@ -525,7 +549,6 @@
           </div>
         </div>
 
-        <!-- Dean Johanesen -->
         <div class="artist-card">
           <img
             src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/642744/82c04431ec90c57a680e7abe7711c3be41034870/original/dean-with-maton-latest-picture.jpg/!!/b%3AW1sicmVzaXplIiwzMjAwXSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
@@ -543,7 +566,6 @@
           </div>
         </div>
 
-        <!-- Corey Hall -->
         <div class="artist-card">
           <img
             src="https://img1.wsimg.com/isteam/ip/7dc78c38-eac0-4a4b-a5cf-5ddb282de14d/IMG_3195.JPG/:/rs=w:3070,m"
@@ -562,11 +584,9 @@
       </div>
     </section>
 
-    <!-- Join Section -->
     <section class="join" id="join">
       <h2>Join the Movement</h2>
       <p>B4Famous is more than a collective—it's a movement to support independent artists before the world catches on.</p>
-      <!-- Store Icons for iOS & Android -->
       <div class="store-icons">
         <a href="https://apps.apple.com/us/app/imaginebc/id1476426515">
           <img class="store-icon" src="https://imaginebc.net/wp-content/uploads/2024/02/AppleStore.png" alt="Apple App Store">
@@ -577,7 +597,6 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
       <h2>Contact Us</h2>
       <p>For booking inquiries or collaborations, reach out at <a href="mailto:info@b4famous.com">info@b4famous.com</a></p>
