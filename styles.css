@@ -105,6 +105,47 @@ nav a:hover::before {
   100% { background-position: 0 0; }
 }
 
+/* ========== Dropdown Menu ========== */
+nav li.dropdown {
+  position: relative; /* Position the dropdown parent */
+}
+/* The actual dropdown menu (hidden by default) */
+.dropdown-menu {
+  display: none;              /* Hide by default */
+  position: absolute;
+  top: 100%;                  /* Appear just below the parent link */
+  left: 0;
+  background-color: rgba(25, 25, 25, 0.95);
+  min-width: 150px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.7);
+  padding: 0.5rem 0;
+  z-index: 9999;
+}
+/* Reveal the dropdown on hover */
+nav li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* The dropdown menu items */
+.dropdown-menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dropdown-menu li a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+.dropdown-menu li a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255,255,255,0.4);
+  background-color: rgba(0,0,0,0.2);
+}
+
 /* Hero Section */
 .hero {
   display: flex;
