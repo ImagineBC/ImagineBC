@@ -1,365 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>B4Famous – Artists</title>
-  <!-- Reference your shared dark-mode stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>B4Famous – For Artists</title>
+  <!-- Link to your shared dark styles (like styles.css) if you wish -->
+  <link rel="stylesheet" href="styles.css">
 
-  <!-- If your main site’s <head> already has Google Fonts or Font Awesome,
-       you can rely on that. Otherwise, include them here if needed. -->
+  <!-- If needed, fonts and icons can be included here 
+       or can rely on them already in your main site’s <head> 
+       e.g., Google Fonts, Font Awesome, etc. -->
 </head>
-<body>
-  <!--
-    We omit the top-level header/hero so the main site’s nav + header appear instead.
-    We'll add a quick "Back to Main Page" link for convenience:
-  -->
-  <main style="max-width: 1100px; margin: 0 auto; padding: 2rem;">
-    <p>
-      <a href="index.html" style="
-        display: inline-block;
-        margin-bottom: 1rem;
-        color: #03a9f4;
-        text-decoration: none;
-      ">&larr; Back to Main Page</a>
-    </p>
+<body style="max-width: 1100px; margin: 0 auto; padding: 2rem;">
 
-    <!-- Title or Intro for the Artists Page -->
-    <h2 style="color: #9c27b0; margin-bottom: 2rem;">
-      Showcase Your Music on B4Famous
-    </h2>
+  <!-- Simple "Back to Main Page" link -->
+  <p>
+    <a href="index.html" style="color: #03a9f4; text-decoration: none;">
+      &larr; Back to Main Page
+    </a>
+  </p>
 
-    <!-- Calling All Artists -->
-    <section class="about" style="margin-bottom: 2rem;">
-      <h2>Calling all Artists</h2>
-      <p>
-        B4Famous isn’t just about venues—it’s a thriving ecosystem built for you,
-        the artist. Harness the power of direct referrals, global exposure, and
-        an audience that wants to see you succeed—without label restrictions.
-        Here, your creativity takes center stage. You keep your rights,
-        control your income, and connect with real fans on your own terms.
-      </p>
-      <p>
-        Whether you’re a solo musician, part of a band, or an emerging
-        singer-songwriter, B4Famous offers the platform and tools to
-        supercharge your visibility, monetize your music, and build a loyal
-        following. Step into the spotlight and join a movement that celebrates
-        independence, creativity, and innovation. It’s time to shape your
-        career the way you’ve always imagined.
-      </p>
-    </section>
-
-    <!-- The rest of the original Artist content follows -->
-    <section class="about" style="margin-bottom: 2rem;">
-      <h2>Why B4Famous?</h2>
-      <p>
-        <strong>B4Famous empowers musicians to earn, grow, and connect without a label.</strong>
-      </p>
-      <p>Keep your rights. Control your income. Reach fans directly.</p>
-    </section>
-
-    <section class="about" style="margin-bottom: 2rem;">
-      <h2>Global Exposure, Built In</h2>
-      <ul style="list-style: none; padding-left: 0;">
-        <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem;">
-          <strong>◆</strong> Your songs appear in feeds <strong>across the world</strong>
-        </li>
-        <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem;">
-          <strong>◆</strong> Gain fans through <strong>shared exposure</strong> with other creators and venues
-        </li>
-        <li style="position: relative; padding-left: 1.5rem;">
-          <strong>◆</strong> No algorithms hiding your music
-        </li>
-      </ul>
-    </section>
-
-    <section class="about" style="margin-bottom: 2rem;">
-      <h2>How You Benefit</h2>
-      <div style="
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-      ">
-        <div style="
-          background-color: #1e1e1e;
-          border-radius: 10px;
-          padding: 1.5rem;
-          text-align: center;
-          color: #ddd;
-          display: flex;
-          flex-direction: column;
-        ">
-          <h3 style="color: #0d6efd; margin-bottom: 1rem;">
-            Own Everything You Upload
-          </h3>
-          <ul style="margin-top: 1rem; text-align: left;">
-            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-              <strong>✔</strong> You own <strong>100%</strong> of your content—forever
-            </li>
-            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-              <strong>✔</strong> B4Famous’s blockchain tech protects your work from unauthorized downloads
-            </li>
-          </ul>
-        </div>
-        <div style="
-          background-color: #1e1e1e;
-          border-radius: 10px;
-          padding: 1.5rem;
-          text-align: center;
-          color: #ddd;
-          display: flex;
-          flex-direction: column;
-        ">
-          <h3 style="color: #0d6efd; margin-bottom: 1rem;">
-            Earn More. Keep More.
-          </h3>
-          <ul style="margin-top: 1rem; text-align: left; flex-grow: 1;">
-            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-              <strong>✔</strong> Up to <strong>80%</strong> of every sale goes directly to <strong>you</strong>
-            </li>
-            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-              <strong>✔</strong> No middlemen. No label cuts taking your share
-            </li>
-            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-              <strong>✔</strong> Sell tracks, behind-the-scenes content, or exclusive releases
-            </li>
-          </ul>
-        </div>
-        <div style="
-          background-color: #1e1e1e;
-          border-radius: 10px;
-          padding: 1.5rem;
-          text-align: center;
-          color: #ddd;
-          display: flex;
-          flex-direction: column;
-        ">
-          <h3 style="color: #0d6efd; margin-bottom: 1rem;">
-            Earn Forever with Referrals
-          </h3>
-          <p style="text-align: left;">
-            Every time you refer someone to B4Famous:
-          </p>
-          <ul style="text-align: left; flex-grow: 1;">
-            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-              <strong>✔</strong> Earn <strong>10%</strong> of everything they buy
-            </li>
-            <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-              <strong>✔</strong> Earn <strong>5%</strong> of rewards they collect from ads or surveys
-            </li>
-          </ul>
-          <p style="margin-top: auto; padding-top: 1rem; text-align: center;">
-            <strong>Refer once. Earn forever.</strong>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="about" style="margin-bottom: 2rem;">
-      <h2>Real-World Example</h2>
-      <ul style="list-style: none; padding-left: 0;">
-        <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem;">
-          <strong>◆</strong> Sell 1,000 songs at $1 → You could earn <strong>$800</strong>
-        </li>
-        <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem;">
-          <strong>◆</strong> Refer 1,000 subscribers → Potentially earn <strong>$300/month recurring*</strong>
-        </li>
-        <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem;">
-          <strong>◆</strong> Fans can use ad-watching rewards to buy your music
-        </li>
-        <li style="position: relative; padding-left: 1.5rem;">
-          <strong>◆</strong> Plus <strong>passive earnings</strong> every time your referrals make purchases or earn rewards
-        </li>
-      </ul>
-      <p style="font-size: 0.9em; opacity: 0.8; margin-top: 1rem;">
-        (*Recurring earnings estimate based on typical user activity and purchase patterns.
-        Actual results may vary.)
-      </p>
-    </section>
-
-    <section class="about" style="margin-bottom: 2rem;">
-      <h2>No Interruptions of Your Music</h2>
-      <ul style="list-style: none; padding-left: 0;">
-        <li style="position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem;">
-          <strong>◆</strong> B4Famous never places ads <strong>over your content</strong>
-        </li>
-        <li style="position: relative; padding-left: 1.5rem;">
-          <strong>◆</strong> Fans who <strong>opt into ads</strong> earn credits—and often use them
-          to <strong>support YOU</strong> directly
-        </li>
-      </ul>
-    </section>
-
-    <section class="about contact-section" style="margin-bottom: 2rem;">
-      <h2>⚡ How to Get Started</h2>
-      <p>Ready to take control? Contact Charles Melin today:</p>
-      <p>
-        Email: <a href="mailto:cmelin@b4famous.com">cmelin@b4famous.com</a><br>
-        Phone: <a href="tel:5553203000">555-320-3000</a>
-      </p>
-    </section>
-
-    <section class="about artist-gallery" style="margin-bottom: 2rem;">
-      <h2>Featured Artists on B4Famous</h2>
-      <div style="
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        justify-content: center;
-        margin-top: 1.5rem;
-      ">
-        <figure style="width: 220px; margin: 0; text-align: center;">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/5ffe1bc8c3f2a54f4ff61cbe/1c2a65e6-d5c7-4b4c-b5de-9ad21f5d9d53/jajax+web+banner.jpg?format=2500w"
-            alt="JudyAnne Jackson"
-            style="
-              width: 100%;
-              height: 140px;
-              object-fit: cover;
-              border-radius: 8px;
-            "
-          />
-          <figcaption style="color: #343a40; font-size: 0.9rem; margin-top: 0.75rem; font-weight: 500;">
-            JudyAnne Jackson
-          </figcaption>
-        </figure>
-        <figure style="width: 220px; margin: 0; text-align: center;">
-          <img
-            src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/648230/d672e3af01e2add6f7f77540201af450c880ea6d/original/ae7aa3b2-0bab-4988-834c-e97ae3abde25.jpeg/!!/b%3AW1sicmVzaXplIiwxMzY1XSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
-            alt="Kyle Shaw"
-            style="
-              width: 100%;
-              height: 140px;
-              object-fit: cover;
-              border-radius: 8px;
-            "
-          />
-          <figcaption style="color: #343a40; font-size: 0.9rem; margin-top: 0.75rem; font-weight: 500;">
-            Kyle Shaw
-          </figcaption>
-        </figure>
-        <figure style="width: 220px; margin: 0; text-align: center;">
-          <img
-            src="https://static.wixstatic.com/media/85f823_57242a30466a42a6956c87564622e0b8~mv2_d_3628_3628_s_4_2.jpg/v1/fill/w_3426,h_2068,al_t,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/85f823_57242a30466a42a6956c87564622e0b8~mv2_d_3628_3628_s_4_2.jpg"
-            alt="CoAnn"
-            style="
-              width: 100%;
-              height: 140px;
-              object-fit: cover;
-              border-radius: 8px;
-            "
-          />
-          <figcaption style="color: #343a40; font-size: 0.9rem; margin-top: 0.75rem; font-weight: 500;">
-            CoAnn
-          </figcaption>
-        </figure>
-        <figure style="width: 220px; margin: 0; text-align: center;">
-          <img
-            src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/642744/82c04431ec90c57a680e7abe7711c3be41034870/original/dean-with-maton-latest-picture.jpg/!!/b%3AW1sicmVzaXplIiwzMjAwXSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
-            alt="Dean Johanesen"
-            style="
-              width: 100%;
-              height: 140px;
-              object-fit: cover;
-              border-radius: 8px;
-            "
-          />
-          <figcaption style="color: #343a40; font-size: 0.9rem; margin-top: 0.75rem; font-weight: 500;">
-            Dean Johanesen
-          </figcaption>
-        </figure>
-        <figure style="width: 220px; margin: 0; text-align: center;">
-          <img
-            src="https://img1.wsimg.com/isteam/ip/7dc78c38-eac0-4a4b-a5cf-5ddb282de14d/IMG_3195.JPG/:/rs=w:3070,m"
-            alt="Corey Hall"
-            style="
-              width: 100%;
-              height: 140px;
-              object-fit: cover;
-              border-radius: 8px;
-            "
-          />
-          <figcaption style="color: #343a40; font-size: 0.9rem; margin-top: 0.75rem; font-weight: 500;">
-            Corey Hall
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section style="
-      text-align: center;
-      background: linear-gradient(45deg, #0d6efd, #d63384);
-      color: #fff;
-      padding: 2.5rem 1.5rem;
+  <!-- Header Image (Hero) -->
+  <div style="
+    width: 100%;
+    height: 350px;
+    background: url('https://images.squarespace-cdn.com/content/v1/5ffe1bc8c3f2a54f4ff61cbe/1c2a65e6-d5c7-4b4c-b5de-9ad21f5d9d53/jajax+web+banner.jpg?format=2500w') 
+      no-repeat center center/cover;
+    position: relative;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;">
+    <div style="
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       border-radius: 12px;
-      margin-top: 2rem;
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+      z-index: 1;
+    "></div>
+    <div style="
+      position: relative;
+      z-index: 2;
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      padding: 1.5rem 3rem;
+      background: rgba(0,0,0,0.7);
+      border-radius: 8px;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      font-family: 'Montserrat', sans-serif;
     ">
-      <h2 style="
-        color: #fff;
-        border-bottom: 2px solid #fff;
-        margin-bottom: 1.5rem;
-        display: inline-block;
-      ">
-        Join B4Famous Today!
-      </h2>
-      <p style="color: #f8f9fa; margin-bottom: 1.5rem; font-size: 1.1rem;">
-        Download the app and start building your independent music career:
-      </p>
-      <div style="margin: 1.5rem 0;">
-        <a
-          href="https://apps.apple.com/us/app/imaginebc/id1476426515"
-          target="_blank"
-          rel="noopener noreferrer"
-          style="display: inline-block; margin: 0 0.75rem;"
-        >
-          <img
-            src="https://imaginebc.net/wp-content/uploads/2024/02/AppleStore.png"
-            alt="Download on the Apple App Store"
-            style="
-              height: 55px;
-              vertical-align: middle;
-              border-radius: 8px;
-              box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-              transition: transform 0.2s ease;
-            "
-          />
-        </a>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.benepay.homebase&hl=en_IN"
-          target="_blank"
-          rel="noopener noreferrer"
-          style="display: inline-block; margin: 0 0.75rem;"
-        >
-          <img
-            src="https://imaginebc.net/wp-content/uploads/2024/02/PlayStore.png"
-            alt="Get it on Google Play"
-            style="
-              height: 55px;
-              vertical-align: middle;
-              border-radius: 8px;
-              box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-              transition: transform 0.2s ease;
-            "
-          />
-        </a>
-      </div>
-      <p style="
-        background-color: rgba(255, 255, 255, 0.2);
-        padding: 0.8rem 1.5rem;
-        border-radius: 6px;
-        display: inline-block;
-        margin-top: 1rem;
-        font-weight: 500;
-        border: 1px solid rgba(255, 255, 255, 0.6);
-        color: #f8f9fa;
-      ">
-        Use Invitation Code:
-        <strong style="color: #fff; font-size: 1.2em; font-weight: 700;">
-          B4FAMOUS
-        </strong>
-      </p>
-    </section>
-  </main>
+      B4Famous: Powered by ImagineBC
+    </div>
+  </div>
 
+  <!-- Main Title -->
+  <h1 style="
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+  ">
+    Start Building Your Career Before the Label Calls
+  </h1>
+
+  <!-- Why B4Famous section -->
+  <div style="
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  ">
+    <h2 style="
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #03a9f4;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    ">
+      Why B4Famous?
+    </h2>
+    <p>
+      <strong style="color: #fff;">
+        B4Famous empowers musicians to earn, grow, and connect without a label.
+      </strong>
+    </p>
+    <p>Keep your rights. Control your income. Reach fans directly.</p>
+  </div>
+
+  <!-- Global Exposure section -->
+  <div style="
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  ">
+    <h2 style="
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #03a9f4;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    ">
+      Global Exposure, Built In
+    </h2>
+    <ul style="list-style: none; margin-top: 0.5rem; padding-left: 0;">
+      <li style="padding-left: 1.5rem; margin-bottom: 0.8rem; position: relative;">
+        <strong style="position: absolute; left: 0; top: 1px; color: #03a9f4;">◆</strong>
+        Your songs appear in feeds <strong>across the world</strong>
+      </li>
+      <li style="padding-left: 1.5rem; margin-bottom: 0.8rem; position: relative;">
+        <strong style="position: absolute; left: 0; top: 1px; color: #03a9f4;">◆</strong>
+        Gain fans through <strong>shared exposure</strong> with other creators and venues
+      </li>
+      <li style="padding-left: 1.5rem; position: relative;">
+        <strong style="position: absolute; left: 0; top: 1px; color: #03a9f4;">◆</strong>
+        No algorithms hiding your music
+      </li>
+    </ul>
+  </div>
+
+  <!-- How You Benefit section -->
+  <div style="
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  ">
+    <h2 style="
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #03a9f4;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    ">
+      How You Benefit
+    </h2>
+    <div style="
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+      gap: 1.5rem; 
+      margin-top: 1.5rem;
+    ">
+      <!-- Earn Col #1 -->
+      <div style="
+        background-color: #252525;
+        border-radius: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+        border: 1px solid #333;
+        display: flex;
+        flex-direction: column;
+      ">
+        <h3 style="color: #03a9f4; margin-bottom: 1rem;">
+          Own Everything You Upload
+        </h3>
+        <ul style="margin-top: 1rem; text-align: left; flex-grow: 1;">
+          <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+            <strong style="color: #4caf50; position: absolute; left: 0; top: 2px;">✔</strong>
+            You own <strong>100%</strong> of your content—forever
+          </li>
+          <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+            <strong style="color: #4caf50; position: absolute; left: 0; top: 2px;">✔</strong>
+            B4Famous’s blockchain tech protects your work from unauthorized downloads
+          </li>
+        </ul>
+      </div>
+      <!-- Earn Col #2 -->
+      <div style="
+        background-color: #252525;
+        border-radius: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+        border: 1px solid #333;
+        display: flex;
+        flex-direction: column;
+      ">
+        <h3 style="color: #03a9f4; margin-bottom: 1rem;">
+          Earn More. Keep More.
+        </h3>
+        <ul style="margin-top: 1rem; text-align: left; flex-grow: 1;">
+          <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+            <strong style="color: #4caf50; position: absolute; left: 0; top: 2px;">✔</strong>
+            Up to <strong>80%</strong> of every sale goes directly to <strong>you</strong>
+          </li>
+          <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+            <strong style="color: #4caf50; position: absolute; left: 0; top: 2px;">✔</strong>
+            No middlemen. No label cuts taking your share
+          </li>
+          <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+            <strong style="color: #4caf50; position: absolute; left: 0; top: 2px;">✔</strong>
+            Sell tracks, behind-the-scenes content, or exclusive releases
+          </li>
+        </ul>
+      </div>
+      <!-- Earn Col #3 -->
+      <div style="
+        background-color: #252525;
+        border-radius: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+        border: 1px solid #333;
+        display: flex;
+        flex-direction: column;
+      ">
+        <h3 style="color: #03a9f4; margin-bottom: 1rem;">
+          Earn Forever with Referrals
+        </h3>
+        <p style="text-align: left; margin-top: 0;">
+          Every time you refer someone to B4Famous:
+        </p>
+        <ul style="text-align: left; flex-grow: 1;">
+          <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+            <strong style="color: #4caf50; position: absolute; left: 0; top: 2px;">✔</strong>
+            Earn <strong>10%</strong> of everything they buy
+          </li>
+          <li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
+            <strong style="color: #4caf50; position: absolute; left: 0; top: 2px;">✔</strong>
+            Earn <strong>5%</strong> of rewards they collect from ads or surveys
+          </li>
+        </ul>
+        <p style="margin-top: auto; padding-top: 1rem;">
+          <strong>Refer once. Earn forever.</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Real-World Example -->
+  <div style="
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  ">
+    <h2 style="
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #03a9f4;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    ">
+      Real-World Example
+    </h2>
+    <ul style="list-style: none; margin-top: 0.5rem; padding-left: 0;">
+      <li style="padding-left: 1.5rem; margin-bottom: 0.8rem; position: relative;">
+        <strong style="position: absolute; left: 0; top: 1px; color: #03a9f4;">◆</strong>
+        Sell 1,000 songs at $1 → You could earn <strong>$800</strong>
+      </li>
+      <li style="padding-left: 1.5rem; margin-bottom: 0.8rem; position: relative;">
+        <strong style="position: absolute; left: 0; top: 1px; color: #03a9f4;">◆</strong>
+        Refer 1,000 subscribers → Potentially earn <strong>$300/month recurring*</strong>
+      </li>
+      <li style="padding-left: 1.5rem; margin-bottom: 0.8rem; position: relative;">
+        <strong style="position: absolute; left: 0; top: 1px; color: #03a9f4;">◆</strong>
+        Fans can use ad-watching rewards to buy your music
+      </li>
+      <li style="padding-left: 1.5rem; position: relative;">
+        <strong style="position: absolute; left: 0; top: 1px; color: #03a9f4;">◆</strong>
+        Plus <strong>passive earnings</strong> every time your referrals make purchases or earn rewards
+      </li>
+    </ul>
+    <p style="font-size: 0.9em; opacity: 0.8; margin-top: 1rem;">
+      (*Recurring earnings estimate based on typical user activity and purchase patterns. Actual results may vary.)
+    </p>
+  </div>
+
+  <!-- No Interruptions -->
+  <div style="
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  ">
+    <h2 style="
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #03a9f4;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    ">
+      No Interruptions on Your Music
+    </h2>
+    <ul style="list-style: none; margin-top: 0.5rem; padding-left: 0;">
+      <li style="padding-left: 1.5rem; margin-bottom: 0.8rem; position: relative;">
+        <strong style="position: absolute; left: 0; top: 1px; color: #03a9f4;">◆</strong>
+        B4Famous never places ads <strong>over your content</strong>
+      </li>
+      <li style="padding-left: 1.5rem; position: relative;">
+        <strong style="position: absolute; left: 0; top: 1px; color: #03a9f4;">◆</strong>
+        Fans who <strong>opt into ads</strong> earn credits—and often use them to <strong>support YOU</strong> directly
+      </li>
+    </ul>
+  </div>
+
+  <!-- Contact Section -->
+  <div style="
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  ">
+    <h2 style="
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #03a9f4;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    ">
+      ⚡ How to Get Started
+    </h2>
+    <p>Ready to take control? Contact Charles Melin today:</p>
+    <p>
+      Email: <a href="mailto:cmelin@b4famous.com">cmelin@b4famous.com</a><br>
+      Phone: <a href="tel:5553203000">555-320-3000</a>
+    </p>
+  </div>
+
+  <!-- Featured Artist Gallery -->
+  <div style="
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-align: center;
+  ">
+    <h2 style="
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #03a9f4;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    ">
+      Featured Artists on B4Famous
+    </h2>
+    <div style="
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    ">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5ffe1bc8c3f2a54f4ff61cbe/1c2a65e6-d5c7-4b4c-b5de-9ad21f5d9d53/jajax+web+banner.jpg?format=2500w"
+        alt="JudyAnne Jackson"
+        style="
+          width: clamp(180px, 18vw, 220px);
+          aspect-ratio: 3/2;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          border: 2px solid transparent;
+        "
+      />
+      <img
+        src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/648230/d672e3af01e2add6f7f77540201af450c880ea6d/original/ae7aa3b2-0bab-4988-834c-e97ae3abde25.jpeg/!!/b%3AW1sicmVzaXplIiwxMzY1XSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
+        alt="Kyle Shaw"
+        style="
+          width: clamp(180px, 18vw, 220px);
+          aspect-ratio: 3/2;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+          border: 2px solid transparent;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        "
+      />
+      <img
+        src="https://static.wixstatic.com/media/85f823_57242a30466a42a6956c87564622e0b8~mv2_d_3628_3628_s_4_2.jpg/v1/fill/w_3426,h_2068,al_t,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/85f823_57242a30466a42a6956c87564622e0b8~mv2_d_3628_3628_s_4_2.jpg"
+        alt="CoAnn"
+        style="
+          width: clamp(180px, 18vw, 220px);
+          aspect-ratio: 3/2;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+          border: 2px solid transparent;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        "
+      />
+      <img
+        src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/642744/82c04431ec90c57a680e7abe7711c3be41034870/original/dean-with-maton-latest-picture.jpg/!!/b%3AW1sicmVzaXplIiwzMjAwXSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
+        alt="Dean Johanesen"
+        style="
+          width: clamp(180px, 18vw, 220px);
+          aspect-ratio: 3/2;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+          border: 2px solid transparent;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        "
+      />
+      <img
+        src="https://img1.wsimg.com/isteam/ip/7dc78c38-eac0-4a4b-a5cf-5ddb282de14d/IMG_3195.JPG/:/rs=w:3070,m"
+        alt="Corey Hall"
+        style="
+          width: clamp(180px, 18vw, 220px);
+          aspect-ratio: 3/2;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+          border: 2px solid transparent;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        "
+      />
+    </div>
+  </div>
+
+  <!-- Join Now CTA -->
+  <div style="
+    text-align: center;
+    background: linear-gradient(45deg, #03a9f4, #f441a5);
+    color: #fff;
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 0;
+  ">
+    <h2 style="
+      border-bottom: 2px solid #fff;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    ">
+      Join B4Famous Today!
+    </h2>
+    <p style="color: #eee; margin-bottom: 1.5rem; font-size: 1.1rem;">
+      Download the app and start building your independent music career:
+    </p>
+    <div style="margin: 1.5rem 0;">
+      <a 
+        href="https://apps.apple.com/us/app/imaginebc/id1476426515" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        style="display: inline-block; margin: 0 0.75rem; transition: transform 0.2s ease;"
+      >
+        <img
+          src="https://imaginebc.net/wp-content/uploads/2024/02/AppleStore.png"
+          alt="Download on the Apple App Store"
+          style="
+            height: 55px;
+            vertical-align: middle;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+          "
+        />
+      </a>
+      <a 
+        href="https://play.google.com/store/apps/details?id=com.benepay.homebase&hl=en_IN" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        style="display: inline-block; margin: 0 0.75rem; transition: transform 0.2s ease;"
+      >
+        <img
+          src="https://imaginebc.net/wp-content/uploads/2024/02/PlayStore.png"
+          alt="Get it on Google Play"
+          style="
+            height: 55px;
+            vertical-align: middle;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+          "
+        />
+      </a>
+    </div>
+    <p style="
+      background-color: rgba(0,0,0,0.3);
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.5);
+    ">
+      Use Invitation Code: 
+      <strong style="color: #fff; font-size: 1.2em;">
+        B4FAMOUS
+      </strong>
+    </p>
+  </div>
 </body>
 </html>
