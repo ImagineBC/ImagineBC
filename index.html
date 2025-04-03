@@ -30,10 +30,19 @@
     </div>
     <nav>
       <ul>
+        <!-- Existing sections -->
         <li><a href="#about">About</a></li>
-        <li><a href="#artists">Artists</a></li>
         <li><a href="#join">Join</a></li>
         <li><a href="#contact">Contact</a></li>
+
+        <!-- New Dropdown -->
+        <li class="dropdown">
+          <a href="#">Explore</a>
+          <ul class="dropdown-menu">
+            <li><a href="ForVenues.html">For Venues</a></li>
+            <li><a href="ForArtists.html">For Artists</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
@@ -56,101 +65,15 @@
       </p>
     </section>
 
-    <section class="artists" id="artists">
-      <h2>Meet Some of Our Artists</h2>
-      <div class="artist-grid">
-        <div class="artist-card">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/5ffe1bc8c3f2a54f4ff61cbe/1c2a65e6-d5c7-4b4c-b5de-9ad21f5d9d53/jajax+web+banner.jpg?format=2500w"
-            alt="JudyAnne Jackson"
-          />
-          <div class="artist-info">
-            <h3>JudyAnne Jackson</h3>
-            <p>
-              With a voice that echoes timeless soul and lyrics that speak to the heart,
-              Florida-based singer-songwriter JudyAnne has captivated audiences nationwide.
-              A finalist on NBC’s Today Show and a PBS Celebration of Music awardee, she
-              has performed at historic venues like The Bitter End in NYC. Her EPs <em>Old Soul</em>
-              and <em>Dear Me</em> showcase her passionate storytelling and undeniable vocal talent.
-            </p>
-            <a href="#join">Join Me in the Community</a>
-          </div>
-        </div>
-
-        <div class="artist-card">
-          <img
-            src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/648230/d672e3af01e2add6f7f77540201af450c880ea6d/original/ae7aa3b2-0bab-4988-834c-e97ae3abde25.jpeg/!!/b%3AW1sicmVzaXplIiwxMzY1XSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
-            alt="Kyle Shaw"
-            style="object-position: 50% 20%;"
-          />
-          <div class="artist-info">
-            <h3>Kyle Shaw</h3>
-            <p>
-              A storyteller at heart, Kyle left the corporate world to pursue music full-time.
-              His 2023 self-titled debut album introduced his soulful voice and heartfelt lyrics
-              to the Tampa Bay scene. With a second album on the way, Kyle continues to craft
-              songs that move, inspire, and leave a lasting impression.
-            </p>
-            <a href="#join">Join Me in the Community</a>
-          </div>
-        </div>
-
-        <div class="artist-card">
-          <img
-            src="https://static.wixstatic.com/media/85f823_57242a30466a42a6956c87564622e0b8~mv2_d_3628_3628_s_4_2.jpg/v1/fill/w_3426,h_2068,al_t,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/85f823_57242a30466a42a6956c87564622e0b8~mv2_d_3628_3628_s_4_2.jpg"
-            alt="CoAnn"
-          />
-          <div class="artist-info">
-            <h3>CoAnn</h3>
-            <p>
-              A Berklee graduate, CoAnn seamlessly blends rock, jazz, and contemporary elements
-              to create her genre-fusing sound. A singer, songwriter, producer, and wellness advocate,
-              she weaves creativity and healing together through her brand, Dragonfly Holistics.
-              Her EP <em>CoAnn</em> and music videos <em>Paralyzed</em> and <em>Worlds Apart</em>
-              highlight her evolving artistry as she crafts her first full-length album.
-            </p>
-            <a href="#join">Join Me in the Community</a>
-          </div>
-        </div>
-
-        <div class="artist-card">
-          <img
-            src="https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/642744/82c04431ec90c57a680e7abe7711c3be41034870/original/dean-with-maton-latest-picture.jpg/!!/b%3AW1sicmVzaXplIiwzMjAwXSxbIm1heCJdLFsid2UiXV0%3D/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
-            alt="Dean Johanesen"
-          />
-          <div class="artist-info">
-            <h3>Dean Johanesen</h3>
-            <p>
-              Inspired by speakeasy-era jazz, Western swing, and roots music, Dean merges history
-              and Americana into his captivating storytelling. From Long Island to Ellenton, FL,
-              he’s transporting listeners to another time. His latest album, <em>Cautionary Tales</em>,
-              showcases his masterful songwriting and is available on all streaming platforms.
-            </p>
-            <a href="#join">Join Me in the Community</a>
-          </div>
-        </div>
-
-        <div class="artist-card">
-          <img
-            src="https://img1.wsimg.com/isteam/ip/7dc78c38-eac0-4a4b-a5cf-5ddb282de14d/IMG_3195.JPG/:/rs=w:3070,m"
-            alt="Corey Hall"
-          />
-          <div class="artist-info">
-            <h3>Corey Hall</h3>
-            <p>
-              A torchbearer of American folk, Corey bridges past and present with his soulful
-              voice and intricate guitar work. Equally adept at reviving old-time classics
-              and penning original tunes, he brings authenticity and raw emotion wherever he performs.
-            </p>
-            <a href="#join">Join Me in the Community</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- We removed the old “Artists” anchor link, 
+         since "For Artists" is now a separate subpage. -->
 
     <section class="join" id="join">
       <h2>Join the Movement</h2>
-      <p>B4Famous is more than a collective—it's a movement to support independent artists before the world catches on.</p>
+      <p>
+        B4Famous is more than a collective—it's a movement to support independent artists 
+        before the world catches on.
+      </p>
       <div class="store-icons">
         <a href="https://apps.apple.com/us/app/imaginebc/id1476426515">
           <img
@@ -171,7 +94,10 @@
 
     <section id="contact">
       <h2>Contact Us</h2>
-      <p>For booking inquiries or collaborations, reach out at <a href="mailto:info@b4famous.com">info@b4famous.com</a></p>
+      <p>
+        For booking inquiries or collaborations, reach out at 
+        <a href="mailto:info@b4famous.com">info@b4famous.com</a>
+      </p>
       <p>Or connect with us on social media:</p>
       <div class="social-icons">
         <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -186,6 +112,5 @@
   <footer>
     <p>&copy; 2025 B4Famous. All rights reserved. | Powered by <a href="#" target="_blank">ImagineBC</a></p>
   </footer>
-
 </body>
 </html>
