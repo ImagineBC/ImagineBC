@@ -336,14 +336,13 @@
   </div>
 
   <!-- Hamburger toggle script -->
-  <script>
-    const navBtn = document.getElementById('navToggle');
-    const siteNav = document.getElementById('siteNav');
-
-    navBtn.addEventListener('click', () => {
-      siteNav.classList.toggle('open');
-      navBtn.classList.toggle('open');
-    });
-  </script>
+<script>
+  const burger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('nav ul');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    navLinks.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
