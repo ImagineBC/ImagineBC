@@ -7,154 +7,339 @@
   <!-- Shared dark‑theme stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- ── MOBILE NAV additions for styles.css (keep here while you test) ── -->
+  <!--
+    Temporary inline styles for demonstration.
+    Eventually, copy the MOBILE NAV rules into styles.css
+    at the bottom, then remove them from here.
+  -->
   <style>
-    /* MOBILE NAV – copy into the end of styles.css once happy */
-    #navToggle{
-      display:none;flex-direction:column;justify-content:space-between;
-      width:32px;height:24px;background:none;border:none;cursor:pointer;
-      padding:0;margin:0;
+    /* MOBILE NAV – copy to the end of styles.css once you’re satisfied */
+
+    #navToggle {
+      display: none;
+      /* The next line adds extra spacing from the logo – feel free to adjust: */
+      margin-left: 1.5rem; /* Move hamburger further right from the logo */
+      flex-direction: column;
+      justify-content: space-between;
+      width: 32px;
+      height: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
     }
-    #navToggle .bar{width:100%;height:3px;background:#bbb;border-radius:2px;transition:.3s}
+    #navToggle .bar {
+      width: 100%;
+      height: 3px;
+      background: #bbb;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
 
-    @media(max-width:768px){
-      #navToggle{display:flex}
-
-      #siteNav{
-        position:fixed;top:0;right:-260px;width:260px;height:100vh;
-        background:#1a1a1a;box-shadow:-4px 0 8px rgba(0,0,0,.6);
-        transition:right .35s ease;padding-top:5rem;z-index:99;
+    @media (max-width: 768px) {
+      /* Show hamburger on mobile */
+      #navToggle {
+        display: flex;
       }
-      #siteNav.open{right:0}
 
-      #siteNav ul{flex-direction:column;gap:1.5rem;padding-left:2rem}
+      /* Off-canvas nav panel */
+      #siteNav {
+        position: fixed;
+        top: 0;
+        right: -260px; /* hidden off screen */
+        width: 260px;
+        height: 100vh;
+        background: #1a1a1a;
+        box-shadow: -4px 0 8px rgba(0, 0, 0, 0.6);
+        transition: right 0.35s ease;
+        padding-top: 5rem; /* so links appear below the header area */
+        z-index: 99;
+      }
+      #siteNav.open {
+        right: 0; /* slide in */
+      }
 
-      /* hamburger → X */
-      #navToggle.open .bar:nth-child(1){transform:translateY(10px) rotate(45deg)}
-      #navToggle.open .bar:nth-child(2){opacity:0}
-      #navToggle.open .bar:nth-child(3){transform:translateY(-10px) rotate(-45deg)}
+      /* Stack the nav items vertically on mobile */
+      #siteNav ul {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-left: 2rem;
+      }
+
+      /* Turn hamburger bars into “X” shape when open */
+      #navToggle.open .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+      }
+      #navToggle.open .bar:nth-child(2) {
+        opacity: 0;
+      }
+      #navToggle.open .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+      }
     }
     /* END MOBILE NAV */
   </style>
 </head>
 
-<body style="margin:0;padding:0;">
+<body style="margin: 0; padding: 0;">
 
-  <!-- ───── HEADER with hamburger ───── -->
-  <header style="width:100%;background:rgba(25,25,25,.9);backdrop-filter:blur(10px);
-                 box-shadow:0 4px 8px rgba(0,0,0,.5);position:sticky;top:0;z-index:100;">
-    <div style="display:flex;align-items:center;justify-content:space-between;
-                max-width:1100px;margin:0 auto;padding:1.5rem 2rem;box-sizing:border-box;">
-
-      <!-- Logo -->
+  <!-- ───── HEADER ───── -->
+  <header
+    style="
+      width: 100%;
+      background: rgba(25, 25, 25, 0.9);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    "
+  >
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1.5rem 2rem;
+        box-sizing: border-box;
+      "
+    >
       <div class="logo">
-        <a href="https://www.b4famous.com/"
-           style="display:flex;align-items:center;text-decoration:none;color:inherit;">
-          <img src="https://imaginebc.net/wp-content/uploads/2025/02/B4Famous-Logo.png"
-               alt="B4Famous Logo"
-               style="height:70px;margin-right:1rem;transition:transform .3s">
-          <span style="font-family:'Montserrat',sans-serif;font-size:2.2rem;font-weight:700;
-                       color:#9c27b0;text-shadow:1px 1px 3px rgba(0,0,0,.6);">
+        <a
+          href="https://www.b4famous.com/"
+          style="
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+          "
+        >
+          <img
+            src="https://imaginebc.net/wp-content/uploads/2025/02/B4Famous-Logo.png"
+            alt="B4Famous Logo"
+            style="height: 70px; margin-right: 1rem; transition: transform 0.3s;"
+          />
+          <span
+            style="
+              font-family: 'Montserrat', sans-serif;
+              font-size: 2.2rem;
+              color: #9c27b0;
+              font-weight: 700;
+              text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+            "
+          >
             B4Famous
           </span>
         </a>
       </div>
 
-      <!-- Hamburger (mobile only) -->
+      <!-- Hamburger button -->
       <button id="navToggle" aria-label="Toggle navigation">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
 
       <!-- Nav links -->
       <nav id="siteNav">
-        <ul style="list-style:none;display:flex;gap:2rem;margin:0;padding:0;flex-wrap:nowrap;">
+        <ul
+          style="
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            flex-wrap: nowrap;
+          "
+        >
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#artists">Artists</a></li>
           <li><a href="index.html#join">Join</a></li>
           <li><a href="index.html#contact">Contact</a></li>
-          <li><a href="ForVenues.html">For Venues</a></li>
-          <li><a href="ForArtists.html">For Artists</a></li>
-          <li><a href="ArtistCatalog.html">Artist Catalog</a></li>
+          <li><a href="ForVenues.html">For Venues</a></li>
+          <li><a href="ForArtists.html">For Artists</a></li>
+          <li><a href="ArtistCatalog.html">Artist Catalog</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- ───── MAIN CONTENT ───── -->
-  <div style="max-width:1100px;margin:0 auto;padding:2rem;">
+  <div style="max-width: 1100px; margin: 0 auto; padding: 2rem;">
 
-    <h1 style="font-family:'Montserrat',sans-serif;font-size:2.5rem;font-weight:800;
-               color:#fff;text-align:center;margin-bottom:2.5rem;">
+    <h1
+      style="
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 2.5rem;
+      "
+    >
       Artist Catalog
     </h1>
 
-    <!-- Collapsible genre panels -->
+    <!--
+      Collapsible Genre Panels
+      Now slightly restyled to match the dark theme.
+    -->
     <style>
-      details{margin-bottom:2rem;background:#1a1a1a;border:1px solid #333;
-              border-radius:12px;padding:1.25rem;box-shadow:0 4px 10px rgba(0,0,0,.35);}
-      summary{font-family:'Montserrat',sans-serif;font-size:1.4rem;font-weight:600;
-              color:#03a9f4;cursor:pointer;outline:none;}
-      details[open] summary{color:#f441a5;}
-      .artist h3{color:#fff;font-size:1.2rem;margin:.75rem 0 .25rem 0;}
-      .song-list{list-style:none;margin-left:1.5rem;padding-left:0;}
-      .song-list li::before{content:"♪";color:#9c27b0;margin-right:.5rem;}
-      .song-list li{margin:.3rem 0;}
+      details {
+        margin-bottom: 2rem;
+        background: #1a1a1a;
+        border: 1px solid #333;
+        border-radius: 12px;
+        padding: 1.25rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+      }
+      summary {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #03a9f4;
+        cursor: pointer;
+        outline: none;
+      }
+      details[open] summary {
+        color: #f441a5;
+      }
+      .artist h3 {
+        color: #fff;
+        font-size: 1.2rem;
+        margin: 0.75rem 0 0.25rem 0;
+      }
+      .song-list {
+        list-style: none;
+        margin-left: 1.5rem;
+        padding-left: 0;
+      }
+      .song-list li::before {
+        content: '♪';
+        color: #9c27b0;
+        margin-right: 0.5rem;
+      }
+      .song-list li {
+        margin: 0.3rem 0;
+      }
     </style>
 
     <details open>
       <summary>Pop</summary>
-      <div class="artist"><h3>Artist Name 1</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
-      <div class="artist"><h3>Artist Name 2</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
+      <div class="artist">
+        <h3>Artist Name 1</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
+      <div class="artist">
+        <h3>Artist Name 2</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
     </details>
 
     <details>
       <summary>Rock</summary>
-      <div class="artist"><h3>Artist Name 1</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
-      <div class="artist"><h3>Artist Name 2</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
+      <div class="artist">
+        <h3>Artist Name 1</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
+      <div class="artist">
+        <h3>Artist Name 2</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
     </details>
 
     <details>
       <summary>Rap</summary>
-      <div class="artist"><h3>Artist Name 1</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
-      <div class="artist"><h3>Artist Name 2</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
+      <div class="artist">
+        <h3>Artist Name 1</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
+      <div class="artist">
+        <h3>Artist Name 2</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
     </details>
 
     <details>
       <summary>Country</summary>
-      <div class="artist"><h3>Artist Name 1</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
-      <div class="artist"><h3>Artist Name 2</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
+      <div class="artist">
+        <h3>Artist Name 1</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
+      <div class="artist">
+        <h3>Artist Name 2</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
     </details>
 
     <details>
       <summary>Jazz</summary>
-      <div class="artist"><h3>Artist Name 1</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
-      <div class="artist"><h3>Artist Name 2</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
+      <div class="artist">
+        <h3>Artist Name 1</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
+      <div class="artist">
+        <h3>Artist Name 2</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
     </details>
 
     <details>
       <summary>R&amp;B</summary>
-      <div class="artist"><h3>Artist Name 1</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
-      <div class="artist"><h3>Artist Name 2</h3>
-        <ul class="song-list"><li>Song Title 1</li><li>Song Title 2</li></ul></div>
+      <div class="artist">
+        <h3>Artist Name 1</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
+      <div class="artist">
+        <h3>Artist Name 2</h3>
+        <ul class="song-list">
+          <li>Song Title 1</li>
+          <li>Song Title 2</li>
+        </ul>
+      </div>
     </details>
-
   </div>
 
-  <!-- ───── Hamburger toggle script ───── -->
+  <!-- Hamburger toggle script -->
   <script>
     const navBtn = document.getElementById('navToggle');
     const siteNav = document.getElementById('siteNav');
+
     navBtn.addEventListener('click', () => {
       siteNav.classList.toggle('open');
       navBtn.classList.toggle('open');
