@@ -10,15 +10,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <style>
+    .catalog-hero {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .catalog-main h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
 
   <div id="header-placeholder"></div>
 
   <main class="catalog-main">
+    <img src="https://imaginebc.net/wp-content/uploads/2025/04/b4famous_Catalog_Hero-scaled.jpg" alt="B4Famous Artist Catalog Hero Image" class="catalog-hero" />
+
     <h1>Artist Catalog</h1>
 
-    <details open>
+    <details>
       <summary>Pop</summary>
       <div class="artist">
         <h3>JudyAnne Jackson</h3>
@@ -67,7 +87,6 @@
         </ul>
       </div>
     </details>
-
   </main>
 
   <div id="footer-placeholder"></div>
