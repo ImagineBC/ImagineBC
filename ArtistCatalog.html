@@ -3,123 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artist Catalog</title>
+  <title>Artist Catalog - B4Famous</title>
 
-  <!-- Global dark‑mode stylesheet you already have -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
-  <style>
-    /* ---------- Page‑specific tweaks ---------- */
-
-    :root{
-      --fs-base: 1rem;          /* easy single source of truth */
-    }
-    html{font-size:var(--fs-base);} /* 1 rem = 16 px desktop */
-
-    /* Container so the page doesn’t hug the edges */
-    main{
-      max-width:900px;
-      margin:4rem auto;
-      padding:0 1.25rem;
-    }
-
-    h1{
-      text-align:center;
-      margin-bottom:2.5rem;
-      font-size:clamp(1.75rem,3vw+1rem,2.5rem); /* responsive */
-      color:#9c27b0;
-      font-family:'Montserrat',sans-serif;
-    }
-
-    /* accordion blocks */
-    details{
-      margin-bottom:1.75rem;
-      border:1px solid #444;
-      border-radius:6px;
-      padding:1rem 1.25rem;
-      background:rgba(255,255,255,0.04);
-    }
-    summary{
-      font-size:clamp(1.1rem,1vw+0.9rem,1.4rem);
-      font-weight:600;
-      cursor:pointer;
-      list-style:none; /* remove default arrow (Chrome) */
-      position:relative;
-      padding-left:1.3rem;
-    }
-    /* custom arrow */
-    summary::before{
-      content:'▸';
-      position:absolute;left:0;top:0;
-      transition:transform .2s;
-    }
-    details[open] summary::before{transform:rotate(90deg);}
-
-    .artist{margin-left:1.5rem;margin-top:1rem;}
-    .artist h3{
-      font-size:clamp(1rem,1vw+0.8rem,1.25rem);
-      margin-bottom:.3rem;
-      color:#03a9f4;
-      font-weight:500;
-    }
-    .song-list{
-      margin-left:1.25rem;
-      list-style:disc;
-      font-size:clamp(.95rem,.9vw+.75rem,1.1rem);
-    }
-
-    /* ---------- Root font bumps (copy to styles.css if you like) ---------- */
-    @media(max-width:900px){ html{font-size:105%;} }
-    @media(max-width:768px){ html{font-size:112%;} }
-    @media(max-width:480px){ html{font-size:118%;} }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-  <!-- 1.  Global header & nav reused from the other pages -->
-  <header>
-    <div class="logo">
-      <a href="https://www.b4famous.com/">
-        <img src="https://imaginebc.net/wp-content/uploads/2025/02/B4Famous-Logo.png" alt="B4Famous Logo">
-        <span class="logo-title">B4Famous</span>
-      </a>
-    </div>
+  <div id="header-placeholder"></div>
 
-    <!-- hamburger for mobile -->
-    <div class="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-
-    <nav>
-      <ul>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#join">Join</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="ForVenues.html">For Venues</a></li>
-        <li><a href="ForArtists.html">For Artists</a></li>
-        <li><a href="ArtistCatalog.html" class="active">Catalog</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- 2.  The catalog itself -->
-  <main>
+  <main class="catalog-main">
     <h1>Artist Catalog</h1>
 
     <details open>
       <summary>Pop</summary>
       <div class="artist">
-        <h3>Artist Name 1</h3>
+        <h3>JudyAnne Jackson</h3>
         <ul class="song-list">
-          <li>Song Title 1</li>
-          <li>Song Title 2</li>
+          <li>Empty Parts of Me</li>
+          <li>Dear Me</li>
+          <li>Old Soul</li>
+          <li>Calling You Out</li>
+          <li>Never Seen the Rain</li>
         </ul>
       </div>
       <div class="artist">
-        <h3>Artist Name 2</h3>
+        <h3>CoAnn</h3>
         <ul class="song-list">
-          <li>Song Title 1</li>
-          <li>Song Title 2</li>
+          <li>Love Me Right</li>
+          <li>Midnight Dreams</li>
+          <li>Echoes of You</li>
         </ul>
       </div>
     </details>
@@ -127,37 +43,36 @@
     <details>
       <summary>Rock</summary>
       <div class="artist">
-        <h3>Artist Name 1</h3>
+        <h3>Kyle Shaw</h3>
         <ul class="song-list">
-          <li>Song Title 1</li>
-          <li>Song Title 2</li>
+          <li>Breaking Through</li>
+          <li>Echoes</li>
+          <li>Rise Again</li>
         </ul>
       </div>
       <div class="artist">
-        <h3>Artist Name 2</h3>
+        <h3>Dean Johanesen</h3>
         <ul class="song-list">
-          <li>Song Title 1</li>
-          <li>Song Title 2</li>
+          <li>The Ballad of Willie Robbins</li>
+          <li>Swingin' at the Savoy</li>
+          <li>The Show Goes On</li>
+        </ul>
+      </div>
+      <div class="artist">
+        <h3>Corey Hall</h3>
+        <ul class="song-list">
+          <li>Blues Highway</li>
+          <li>Midnight Train</li>
+          <li>Southern Soul</li>
         </ul>
       </div>
     </details>
 
-    <!-- …repeat for other genres… -->
   </main>
 
-  <!-- 3.  Optional footer -->
-  <footer>
-    <p>&copy; 2025 B4Famous — Powered by ImagineBC</p>
-  </footer>
+  <div id="footer-placeholder"></div>
 
-  <!-- 4.  Hamburger JS (same snippet you use elsewhere) -->
-  <script>
-    const burger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('nav ul');
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('active');
-      navLinks.classList.toggle('open');
-    });
-  </script>
+  <script src="scripts.js"></script>
+
 </body>
 </html>
