@@ -408,6 +408,7 @@ nav ul{
   /* layout */
   flex-direction: column;
   flex-wrap: nowrap;
+  justify-content: flex-start;  
   gap: var(--space-lg);
 
   /* spacing – tidy 24 px top padding */
